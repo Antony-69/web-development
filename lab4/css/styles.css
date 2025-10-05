@@ -680,9 +680,6 @@ p.po-d {
     transition: fill 1s ease-out;
 }
 
-.logo svg:hover {
-}
-
 .logo h1,.logo .site-name {
     display: none;
 }
@@ -848,15 +845,6 @@ a.logo:hover,a.logo:active {
         border-top: none;
     }
 
-    ul.menu--main li {
-    }
-
-    #block-lpnu-main-menu .first-level {
-    }
-
-    #block-lpnu-main-menu .expanded {
-    }
-
     #block-lpnu-main-menu .admission,#block-lpnu-main-menu .students,#block-lpnu-main-menu .staff,#block-lpnu-main-menu .alumni {
         background: #fff;
     }
@@ -988,9 +976,6 @@ a.logo:hover,a.logo:active {
         right: 15px;
     }
 
-    #block-lpnu-peremikachmovi-2 {
-    }
-
     #block-lpnu-peremikachmovi-2 ul.links {
         text-align: right;
         margin-top: 0;
@@ -1052,9 +1037,6 @@ a.logo:hover,a.logo:active {
 }
 
 @media only screen and (min-width : 1200px) {
-    .region-navigation-collapsible {
-    }
-
     .path-frontpage .navbar .logo {
         padding: 15px 30px;
     }
@@ -1118,9 +1100,6 @@ a.logo:hover,a.logo:active {
     border-radius: 0;
 }
 
-#block-lpnu-search .btn-primary {
-}
-
 @media only screen and (min-width : 768px) {
     #block-lpnu-search {
         padding-right:35px;
@@ -1143,9 +1122,6 @@ a.logo:hover,a.logo:active {
 
 .dropdown-menu li a {
     padding: 4px 20px;
-}
-
-.navbar-nav li a {
 }
 
 ul.navbar-nav li.expanded {
@@ -1219,9 +1195,6 @@ ul.navbar-nav li.expanded {
     .dropdown-menu li a {
         padding: 4px 20px;
     }
-
-    #block-lpnu-search {
-    }
 }
 
 @media only screen and (min-width : 1200px) {
@@ -1264,12 +1237,6 @@ h1.group-hero-project-desktop {
     color: #fff;
 }
 
-.group-hero-project-dark .container {
-}
-
-#hero .group-hero-project-dark {
-}
-
 .group-hero-project-content {
     position: absolute;
     top: 50%;
@@ -1298,9 +1265,6 @@ h1.group-hero-project-desktop {
 
 .shadow {
     min-height: 120px;
-}
-
-#hero a {
 }
 
 #hero a:link {
@@ -1349,9 +1313,6 @@ h1.group-hero-project-desktop {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-}
-
-#block-lpnushortcutstop4 h2 span {
 }
 
 #block-lpnushortcutstop4 h2 svg {
@@ -1478,9 +1439,6 @@ h1.group-hero-project-desktop {
     font-size: 2rem;
 }
 
-#featured_container h2 span {
-}
-
 #featured_container .shadow_featured {
     position: absolute !important;
     margin-bottom: 0 !important;
@@ -1574,12 +1532,6 @@ h1.group-hero-project-desktop {
 
 .path-frontpage {
     margin-top: 30px;
-}
-
-.main-container {
-}
-
-#block-views-block-front-page-news-block-3,.view-id-unit_news {
 }
 
 #block-views-block-front-page-news-block-3 h2 {
@@ -2158,9 +2110,6 @@ h1.page-header {
     padding: 10px 0;
 }
 
-.fotorama__active {
-}
-
 .field--name-field-image-description {
     font-size: 1.4rem;
     color: #444444;
@@ -2208,18 +2157,12 @@ h1.page-header {
 @media only screen and (min-width : 1600px) {
 }
 
-.view-display-id-page_1 .view-content {
-}
-
 .view-display-id-page_1 h2,.view-display-id-page_1 h3 {
     text-align: left;
 }
 
 .view-display-id-page_1 .views-row {
     display: inline-block;
-}
-
-.view-display-id-page_1 a {
 }
 
 .view-display-id-page_1 img {
