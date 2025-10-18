@@ -7,42 +7,54 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #1a237e; /* dark blue background */
+  background-color: #ffffff;
   color: #003366;
 }
 
 /* ---------- HEADER CONTAINER ---------- */
 #events_container {
-  background-color: #1a237e;
-  padding: 40px 20px;
+  background-color: #1a237e; /* lpnu dark blue */
+  padding: 48px 20px;
+  color: #ffffff;
 }
 
 /* Center and style section title */
 #events_container h2 {
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   text-align: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #ffffff55;
+  margin: 0 auto 28px auto;
+  border-bottom: 2px solid rgba(255,255,255,0.35);
   display: inline-block;
-  padding-bottom: 6px;
+  padding: 6px 10px 8px 10px;
 }
 
+/* small helper container to center content */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* ---------- GRID LAYOUT ---------- */
 /* ---------- GRID LAYOUT ---------- */
 .views-view-grid .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 22px 18px;
+  align-items: stretch;
 }
 
 /* Each card */
 .views-col {
   background-color: #eaf3f6;
-  border-radius: 4px;
+  border-radius: 6px;
   overflow: hidden;
   width: 280px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.22s cubic-bezier(.2,.9,.2,1), box-shadow 0.22s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .views-col:hover {
@@ -60,10 +72,13 @@ body {
 
 /* ---------- DATE ---------- */
 .event_date {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #003366;
-  padding: 10px 15px 5px;
-  border-bottom: 1px dotted #999;
+  padding: 10px 14px;
+  border-bottom: 1px dotted rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.9);
+  display: inline-block;
+  border-radius: 3px;
 }
 
 /* ---------- EVENT TITLE ---------- */
@@ -72,7 +87,8 @@ body {
   color: #004c80;
   font-weight: 600;
   line-height: 1.4;
-  padding: 10px 15px 20px;
+  padding: 12px 15px 18px;
+  margin: 0;
 }
 
 .views-col a {
@@ -84,21 +100,28 @@ body {
   color: #1a237e;
 }
 
+/* ensure link area doesn't overflow image */
+.views-field .field-content a { display: block; color: inherit; }
+
+/* small time/date formatting */
+.event_date time { font-weight: 600; color: #0b2b4a; }
+
+/* ---------- RESPONSIVE ---------- */
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1200px) {
-  .views-col {
-    width: 220px;
-  }
+  .views-col { width: 240px; }
 }
 
-@media (max-width: 768px) {
-  .views-col {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .views-view-grid .row {
-    flex-direction: column;
-    align-items: center;
-  }
+@media (max-width: 992px) {
+  .views-col { width: 48%; max-width: 340px; }
 }
+
+@media (max-width: 640px) {
+  .views-col { width: 100%; max-width: 520px; }
+  .views-view-grid .row { flex-direction: column; align-items: center; }
+  #events_container { padding: 28px 12px; }
+  #events_container h2 { font-size: 1.4rem; }
+}
+
+/* small utility spacing inside the card content */
+.views-col .views-field { padding: 0 12px 16px; }
